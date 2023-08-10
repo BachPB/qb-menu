@@ -60,12 +60,6 @@ RegisterNetEvent('qb-menu:client:testButton', function(data)
 end)
 ```
 
-## Preview
-
-<p align="center">
-  <img src="menu_preview.gif" alt="Menu Preview GIF">
-</p>
-
 ## License
 
 This menu system is developed under the QBCore Framework and is licensed under the GNU General Public License. For full details, please refer to the [license documentation](LICENSE.md).
