@@ -67,5 +67,5 @@ This menu system is developed under the QBCore Framework and is licensed under t
 ---
 
 <p align="center">
-  Visit the QBCore Framework GitHub Repository: [QBCore](https://github.com/joshuaware/qb-core)
+  Visit the QBCore Framework GitHub Repository: [QBCore]([https://github.com/qbcore-framework/qb-core])
 </p>
