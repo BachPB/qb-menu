@@ -1,12 +1,8 @@
 # Enhanced QB-Menu
 
-<p align="center">
-  <img src="menu_preview_image.png" alt="Menu Preview">
-</p>
-
 ## Dual Compatibility: ox_lib and Standard QB-Menu Integration
 
-A versatile menu system designed for seamless integration with the QBCore Framework, supporting both **[ox_lib](https://github.com/overextended/ox_menu)** and the classic QB-Menu.
+A versatile menu system designed for seamless integration with the QBCore Framework, supporting both **[ox_lib](https://github.com/overextended/ox_lib)** and the classic QB-Menu.
 
 Built upon the foundation of **[NH Context](https://forum.cfx.re/t/no-longer-supported-standalone-nerohiro-s-context-menu-dynamic-event-firing-menu/2564083)** by **[NeroHiro](https://github.com/nerohiro)**, this modified version offers enhanced functionality and a revamped user experience.
 
