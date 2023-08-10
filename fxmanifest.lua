@@ -8,7 +8,7 @@ client_scripts{
  'client/*.lua',
 }
 shared_scripts {
- '@ox_lib/init.lua',
+ '@ox_lib/init.lua', -- Comment if not needed
  'config.lua',
 }
 
