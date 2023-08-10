@@ -1,22 +1,29 @@
-# this is a edited version of qb-menu
-Menu System for the QBCore Framework
+# Enhanced QB-Menu
 
-This is a modified version of **[NH Context](https://forum.cfx.re/t/no-longer-supported-standalone-nerohiro-s-context-menu-dynamic-event-firing-menu/2564083)** by **[NeroHiro](https://github.com/nerohiro)**
+<p align="center">
+  <img src="menu_preview_image.png" alt="Menu Preview">
+</p>
 
---[[
-EXAMPLE MENU
---]]
+## Dual Compatibility: ox_lib and Standard QB-Menu Integration
 
-```
+A versatile menu system designed for seamless integration with the QBCore Framework, supporting both **[ox_lib](https://github.com/overextended/ox_menu)** and the classic QB-Menu.
+
+Built upon the foundation of **[NH Context](https://forum.cfx.re/t/no-longer-supported-standalone-nerohiro-s-context-menu-dynamic-event-firing-menu/2564083)** by **[NeroHiro](https://github.com/nerohiro)**, this modified version offers enhanced functionality and a revamped user experience.
+
+## Usage
+
+Integrate stunning menus into your QBCore project with ease using the provided code snippets:
+
+```lua
 RegisterCommand("qbmenutest", function(source, args, raw)
     openMenu({
         {
             header = "Main Title",
-            isMenuHeader = true, -- Set to true to make a nonclickable title
+            isMenuHeader = true,
         },
         {
             header = "Sub Menu Button",
-            txt = "This goes to a sub menu",
+            txt = "Explore Sub Menu",
             params = {
                 event = "qb-menu:client:testMenu2",
                 args = {
@@ -24,22 +31,12 @@ RegisterCommand("qbmenutest", function(source, args, raw)
                 }
             }
         },
-        {
-            header = "Sub Menu Button",
-            txt = "This goes to a sub menu",
-            disabled = true,
-            -- hidden = true, -- doesnt create this at all if set to true
-            params = {
-                event = "qb-menu:client:testMenu2",
-                args = {
-                    number = 1,
-                }
-            }
-        },
+        -- Additional menu items can be added here
     })
 end)
 ```
-```
+
+```lua
 RegisterNetEvent('qb-menu:client:testMenu2', function(data)
     local number = data.number
     openMenu({
@@ -47,38 +44,38 @@ RegisterNetEvent('qb-menu:client:testMenu2', function(data)
             header = "< Go Back",
         },
         {
-            header = "Number: "..number,
-            txt = "Other",
+            header = "Number: " .. number,
+            txt = "Other Option",
             params = {
                 event = "qb-menu:client:testButton",
                 args = {
-                    message = "This was called by clicking this button"
+                    message = "Clicked this button!"
                 }
             }
         },
+        -- More menu items can be added here
     })
 end)
 ```
-```
+
+```lua
 RegisterNetEvent('qb-menu:client:testButton', function(data)
     TriggerEvent('QBCore:Notify', data.message)
 end)
 ```
 
-# License
+## Preview
 
-    QBCore Framework
-    Copyright (C) 2021 Joshua Eger
+<p align="center">
+  <img src="menu_preview.gif" alt="Menu Preview GIF">
+</p>
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+## License
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+This menu system is developed under the QBCore Framework and is licensed under the GNU General Public License. For full details, please refer to the [license documentation](LICENSE.md).
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>
+---
+
+<p align="center">
+  Visit the QBCore Framework GitHub Repository: [QBCore](https://github.com/joshuaware/qb-core)
+</p>
