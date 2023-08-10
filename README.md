@@ -6,6 +6,8 @@ A versatile menu system designed for seamless integration with the QBCore Framew
 
 Built upon the foundation of **[NH Context](https://forum.cfx.re/t/no-longer-supported-standalone-nerohiro-s-context-menu-dynamic-event-firing-menu/2564083)** by **[NeroHiro](https://github.com/nerohiro)**, this modified version offers enhanced functionality and a revamped user experience.
 
+# Credits to **[ThomasDEV](https://github.com/ThomasDev16)** for making this possible
+
 ## Usage
 
 Integrate stunning menus into your QBCore project with ease using the provided code snippets:
