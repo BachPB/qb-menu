@@ -56,6 +56,18 @@ local function convertToOx(data)
     return oxData
 end
 
+local function showHeader(data)
+    headerShown = true
+    sendData = data
+    convertToOx(data)
+end
+
+local function closeMenu()
+    sendData = nil
+    headerShown = false
+    lib.hideContext()
+end
+
 -- Events
 
 RegisterNetEvent('qb-menu:client:openMenu', function(data)
